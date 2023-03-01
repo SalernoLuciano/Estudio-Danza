@@ -4,11 +4,24 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pink-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--pink-dark);
+}
+
 :root {
-  --link-primary-color: #f299ca;
-  --primary-color: #000;
-  --primary-color-soft: #0d0d0d;
-  --secondary-color: #f2b3d1;
+  --black-primary: #000;
+  --black-primary-soft: #0d0d0d;
+  --pink-primary: #f299ca;
+  --pink-secondary: #F451AB;
+  --pink-dark: #732650;
   --facebook-color: #3b5998;
   --youtube-color: #c4302b;
   --instagram-color: radial-gradient(
@@ -21,13 +34,16 @@
   );
 }
 
+body{
+  background-color: #f0ede3;
+}
 /* Estilos Mobile First */
 
 /* INICIO de estilos de HEADER */
 /* INICIOEstilos del nav__logo-container */
 
 header {
-  background-color: var(--primary-color);
+  background-color: var(--black-primary);
   width: 100%;
 }
 
@@ -53,14 +69,14 @@ nav {
 }
 
 .nav__logo-container__title {
-  color: var(--link-primary-color);
+  color: var(--pink-primary);
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   user-select: none;
 }
 
 .nav__logo-container__boton-menu {
-  color: var(--link-primary-color);
+  color: var(--pink-secondary);
   padding-left: 1rem;
   cursor: pointer;
 }
@@ -85,7 +101,7 @@ nav {
 }
 
 .nav__menu-container__menu__item__link {
-  color: var(--secondary-color);
+  color: var(--pink-secondary);
   font-family: "Oswald", sans-serif;
   font-weight: 200;
   text-decoration: none;
@@ -93,8 +109,8 @@ nav {
 
 .nav__menu-container__menu__item__link:hover,
 .footer-container__links__item:hover {
-  text-shadow: 1px 1px 2px white, 0 0 1em var(--link-primary-color),
-    0 0 0.2em var(--link-primary-color);
+  text-shadow: 1px 1px 2px white, 0 0 1em var(--pink-primary),
+    0 0 0.2em var(--pink-primary);
 }
 
 /* FIN estilos nav__menu-container */
@@ -103,13 +119,17 @@ nav {
 
 /* INICIO estilos MAIN */
 main {
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 2rem;
+  background-color: #f3cfe3;
 }
 
 main > h2 {
   font-family: Oswald, sans-serif;
   position: relative;
-  color: var(--primary-color-soft);
+  color: var(--black-primary-soft);
 }
 
 main > h2::before {
@@ -117,16 +137,24 @@ main > h2::before {
   position: absolute;
   width: 150px;
   height: 2px;
-  background-color: var(--link-primary-color);
+  background-color: var(--pink-primary);
   bottom: 0;
+}
+
+.index-main__image{
+  border-radius: 2px;
+  box-shadow: 0px 0px 4px var(--black-primary-soft);
+  max-width: fit-content;
+  margin: auto;
 }
 /* FIN estilos MAIN */
 
 /* Inicio de estilos del FOOTER*/
 
 .footer-container {
-  background-color: var(--secondary-color);
+  background-color: var(--pink-dark);
   padding: 0.5rem;
+  color: white;
 }
 
 .footer-container__redes-sociales {
@@ -150,7 +178,7 @@ main > h2::before {
 
 .footer-container__redes-sociales__item__link,
 .footer-container__links__item__link {
-  color: var(--primary-color);
+  color: var(--pink-primary);
   font-family: Oswald, sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -181,12 +209,12 @@ main > h2::before {
 }
 
 .youtube:hover {
-  text-shadow: 0px 0px 2px var(--link-primary-color),
+  text-shadow: 0px 0px 2px var(--pink-primary),
     0 0 0.5em var(--youtube-color), 0 0 0.2em var(--youtube-color);
 }
 
 .facebook:hover {
-  text-shadow: 0px 0px 2px var(--link-primary-color),
+  text-shadow: 0px 0px 2px var(--pink-primary),
     0 0 0.5em var(--facebook-color), 0 0 0.2em var(--facebook-color);
 }
 
@@ -196,5 +224,9 @@ main > h2::before {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
   padding: 2rem 0 0;
+}
+
+.copyright__designer-link{
+  color: var(--pink-secondary);
 }
 /* Fin de estilos del FOOTER */
