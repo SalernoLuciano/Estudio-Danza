@@ -22,6 +22,7 @@
   --pink-primary: #f299ca;
   --pink-secondary: #F451AB;
   --pink-dark: #732650;
+  --pink-background: #f3cfe3;
   --facebook-color: #3b5998;
   --youtube-color: #c4302b;
   --instagram-color: radial-gradient(
@@ -81,6 +82,10 @@ nav {
   cursor: pointer;
 }
 
+.nav__menu-container__menu{
+  gap: 12px;
+}
+
 /* FIN estilos nav__logo-container */
 
 /* INICIO estilos del nav__menu-container */
@@ -123,7 +128,7 @@ main {
   flex-direction: column;
   padding: 1.5rem;
   gap: 2rem;
-  background-color: #f3cfe3;
+  background-color: var(--pink-background);
 }
 
 main > h2 {
@@ -230,3 +235,23 @@ main > h2::before {
   color: var(--pink-secondary);
 }
 /* Fin de estilos del FOOTER */
+@media (min-width: 768px) {
+  .nav__logo-container__boton-menu{
+    display: none;
+  }
+
+  .ocultar{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav__menu-container__menu{
+    flex-direction: row;
+  } 
+}
+
+@media (min-width: 1024px) {
+  nav{
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  } 
+}
