@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -51,7 +55,7 @@ header {
 nav {
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: minmax(320px, 1fr);
 }
 
 .nav__logo-container {
@@ -141,6 +145,33 @@ main > h2::before {
   content: "";
   position: absolute;
   width: 150px;
+  height: 2px;
+  background-color: var(--pink-primary);
+  bottom: 0;
+}
+
+.eventos-titulo::before{
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 2px;
+  background-color: var(--pink-primary);
+  bottom: 0;
+}
+
+.cursos-titulo::before{
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 2px;
+  background-color: var(--pink-primary);
+  bottom: 0;
+}
+
+.contacto-titulo::before{
+  content: "";
+  position: absolute;
+  width: 118px;
   height: 2px;
   background-color: var(--pink-primary);
   bottom: 0;
@@ -236,6 +267,15 @@ main > h2::before {
 }
 /* Fin de estilos del FOOTER */
 @media (min-width: 768px) {
+
+  nav{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav__logo-container{
+    justify-content: space-evenly;
+  }
+  
   .nav__logo-container__boton-menu{
     display: none;
   }
@@ -247,11 +287,36 @@ main > h2::before {
 
   .nav__menu-container__menu{
     flex-direction: row;
-  } 
+  }
+
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .footer-container__links{
+    display: flex;
+    grid-column: 3/6;
+    justify-content: space-around;
+  }
+
+  .footer-container__redes-sociales{
+    grid-column: 1/2;
+  }
+
+  .copyright{
+    grid-column: 2/5;
+  }
 }
 
 @media (min-width: 1024px) {
-  nav{
-    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
-  } 
+  .nav__logo-container{
+    justify-content: center;
+  }
+
+  .footer-container__links{
+    grid-column: 4/6;
+  }
 }
