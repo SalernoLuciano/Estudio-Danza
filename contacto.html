@@ -19,6 +19,14 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>DANZARTE FIORI - Contacto</title>
   </head>
@@ -40,7 +48,7 @@
               <a
                 class="nav__menu-container__menu__item__link"
                 href="./index.html"
-                >Nuestra Historia</a
+                >Inicio</a
               >
             </li>
             <li class="nav__menu-container__menu__item">
@@ -69,15 +77,103 @@
       </nav>
     </header>
 
-    <main class="index-main">
+    <main class="contacto-main">
       <h2 class="contacto-titulo">Contactános</h2>
 
-      <iframe
-      src="https://www.google.com/maps/d/u/0/embed?mid=1803NIPLe3fqJVL3w_A8l41DiWWxkegE&ehbc=2E312F"
-      width="288"
-      height="240"
-    ></iframe>
+      <form action="">
+        <section>
+          <input
+            type="text"
+            name="nombre"
+            id="form-nombre"
+            placeholder="Nombre"
+            autocomplete="given-name"
+            required
+          />
+          <span class="error"
+            ><i class="fi fi-rr-info"></i> El campo es requerido</span
+          >
+        </section>
 
+        <section>
+          <input
+            type="text"
+            name="apellido"
+            id="form-apellido"
+            placeholder="Apellido"
+            autocomplete="family-name"
+            required
+          />
+          <span class="error"
+            ><i class="fi fi-rr-info"></i> El campo es requerido</span
+          >
+        </section>
+
+        <section>
+          <input
+            type="tel"
+            name="telefono"
+            id="form-telefono"
+            placeholder="Telefono"
+            autocomplete="tel-national"
+            required
+          />
+          <span class="error"
+            ><i class="fi fi-rr-info"></i> El campo es requerido</span
+          >
+        </section>
+
+        <section>
+          <input
+            type="email"
+            name="email"
+            id="form-email"
+            placeholder="user@mail.com"
+            autocomplete="email"
+            required
+          />
+          <span class="error"
+            ><i class="fi fi-rr-info"></i> El campo es requerido</span
+          >
+        </section>
+
+        <section>
+          <textarea
+            name="comentario"
+            id="comentario"
+            cols="30"
+            rows="10"
+            spellcheck="true"
+          ></textarea>
+        </section>
+
+        <section>
+          <label for="inscripcion">
+            <span
+              >Queres que te contactemos para programar una clase de prueba?
+            </span>
+            <input type="checkbox" name="inscripcion" id="inscripcion" />
+          </label>
+        </section>
+        <button type="submit">Enviar Consulta</button>
+      </form>
+
+      <section class="contact-data">
+        <ul>
+          <li><i class="fi-ss-marker"></i> Direccion</li>
+          <li><i class="fi-ss-phone-call"></i> 9999-9999</li>
+          <li><i class="fi-ss-envelope"></i> contacto@mail.com</li>
+          <li><i class="fi-brands-instagram"></i>@Danzarte Fiori</li>
+          <li><i class="fi-brands-facebook"></i>@Danzarte</li>
+          <li><i class="fi-brands-youtube"></i>@DanzarteVideo</li>
+        </ul>
+      </section>
+
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=1803NIPLe3fqJVL3w_A8l41DiWWxkegE&ehbc=2E312F"
+        width="288"
+        height="240"
+      ></iframe>
     </main>
     <footer class="footer-container">
       <!-- Lista de links ( con iconos a redes sociales ) -->
@@ -119,7 +215,7 @@
             href="./index.html"
             target="_blank"
             rel="noopener noreferrer"
-            >Nuestra Historia</a
+            >Inicio</a
           >
         </li>
         <li class="footer-container__links__item">
@@ -153,8 +249,15 @@
       </ul>
 
       <p class="copyright">
-        <b>&copy;2023 Danzarte Fiori</b>. Todos los derechos reservados. Diseñado por
-        <a class="copyright__designer-link" href="https://github.com/SalernoLuciano" target="_blank" rel="noopener noreferrer">Luciano Salerno</a>
+        <b>&copy;2023 Danzarte Fiori</b>. Todos los derechos reservados.
+        Diseñado por
+        <a
+          class="copyright__designer-link"
+          href="https://github.com/SalernoLuciano"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fi-brands-github"></i> Luciano Salerno</a
+        >
       </p>
     </footer>
     <script src="./script.js"></script>
