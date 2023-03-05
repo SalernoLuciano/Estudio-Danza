@@ -25,31 +25,31 @@ menuIcon.addEventListener("click", () => {
 // Validacion del Nombre
 const inputNombre = document.getElementById("form-nombre");
 inputNombre.addEventListener("focus", () => {
-  cambiarClase(inputNombre, "ocultar");
+  cambiarClase(inputNombre, "ocultar-error");
 });
 
 inputNombre.addEventListener("input", () => {
-  cambiarClase(inputNombre, "ocultar");
+  cambiarClase(inputNombre, "ocultar-error");
 });
 
 // Validacion del Apellido
 const inputApellido = document.getElementById("form-apellido");
 inputApellido.addEventListener("focus", () => {
-  cambiarClase(inputApellido, "ocultar");
+  cambiarClase(inputApellido, "ocultar-error");
 });
 
 inputApellido.addEventListener("input", () => {
-  cambiarClase(inputApellido, "ocultar");
+  cambiarClase(inputApellido, "ocultar-error");
 });
 
 // Validacion del Mail
 const inputMail = document.getElementById("form-email");
 inputMail.addEventListener("input", () => {
   if (MAILREGEX.exec(inputMail.value) === null) {
-    inputMail.nextElementSibling.classList.remove("ocultar");
+    inputMail.nextElementSibling.classList.remove("ocultar-error");
   }
   if (MAILREGEX.exec(inputMail.value) !== null) {
-    inputMail.nextElementSibling.classList.add("ocultar");
+    inputMail.nextElementSibling.classList.add("ocultar-error");
   }
 });
 

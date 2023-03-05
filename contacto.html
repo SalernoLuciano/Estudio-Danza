@@ -81,123 +81,147 @@
     <main class="contacto-main">
       <h2 class="contacto-titulo">Contactános</h2>
 
-      <form action="">
-        <section>
-          <label for="nombre"
-            ><span class="label"
-              >Nombre <span class="error">*</span>
-            </span></label
-          >
-          <input
-            type="text"
-            name="nombre"
-            id="form-nombre"
-            placeholder="Nombre"
-            autocomplete="given-name"
-            required
-          />
-          <span class="error ocultar"
-            ><i class="fi fi-rr-info"></i> El campo es requerido</span
-          >
+      <div class="contact-container">
+        <form action="">
+          <section>
+            <label for="nombre"
+              ><span class="label"
+                >Nombre <span class="error">*</span>
+              </span></label
+            >
+            <input
+              type="text"
+              name="nombre"
+              id="form-nombre"
+              placeholder="Nombre"
+              autocomplete="given-name"
+              required
+            />
+            <span class="error ocultar-error"
+              ><i class="fi fi-rr-info"></i> El campo es requerido</span
+            >
+          </section>
+
+          <section>
+            <label for="apellido"
+              ><span class="label"
+                >Apellido<span class="error">*</span></span
+              ></label
+            >
+
+            <input
+              type="text"
+              name="apellido"
+              id="form-apellido"
+              placeholder="Apellido"
+              autocomplete="family-name"
+              required
+            />
+            <span class="error ocultar-error"
+              ><i class="fi fi-rr-info"></i> El campo es requerido</span
+            >
+          </section>
+
+          <section>
+            <label for="telefono"><span class="label">Telefono</span></label>
+
+            <input
+              type="tel"
+              name="telefono"
+              id="form-telefono"
+              placeholder="Telefono"
+              autocomplete="tel-national"
+            />
+          </section>
+
+          <section>
+            <label for="email"
+              ><span class="label"
+                >Email<span class="error">*</span></span
+              ></label
+            >
+
+            <input
+              type="email"
+              name="email"
+              id="form-email"
+              placeholder="user@mail.com"
+              autocomplete="email"
+              required
+            />
+            <span class="error-incompleto ocultar-error"
+              ><i class="fi fi-rr-info"></i> Email requerido</span
+            >
+            <span class="error-formato ocultar-error"
+              ><i class="fi fi-rr-info"></i>Formato incorrecto</span
+            >
+          </section>
+
+          <section>
+            <label for="comentario"><span class="label">Mensaje</span></label>
+
+            <textarea
+              name="comentario"
+              id="comentario"
+              cols="30"
+              rows="10"
+              spellcheck="true"
+              placeholder="Ingrese su mensaje ... "
+              maxlength="500"
+            ></textarea>
+            <span class="info-comentario"
+              ><i class="fi fi-rr-info"></i>500 caracteres restantes</span
+            >
+          </section>
+
+          <section class="inscripcion-section">
+            <label for="inscripcion" class="inscripcion">
+              <span class="label"
+                >Queres que te contactemos para programar una clase de prueba?
+              </span>
+              <input type="checkbox" name="inscripcion" id="inscripcion" />
+            </label>
+          </section>
+          <button type="submit">Enviar Consulta</button>
+        </form>
+
+        <section class="contact-data">
+          <ul>
+            <li><i class="fi-ss-marker"></i> Direccion</li>
+            <li><i class="fi-ss-phone-call"></i> 9999-9999</li>
+            <li><i class="fi-ss-envelope"></i> contacto@mail.com</li>
+            <li><i class="fi-brands-instagram"></i>@Danzarte Fiori</li>
+            <li><i class="fi-brands-facebook"></i>@Danzarte</li>
+            <li><i class="fi-brands-youtube"></i>@DanzarteVideo</li>
+          </ul>
+
+          <!-- <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=1803NIPLe3fqJVL3w_A8l41DiWWxkegE&ehbc=2E312F"
+            width="272"
+            height="240"
+          ></iframe> -->
+          <h3>Temperley</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.9448091779054!2d-58.41232428501554!3d-34.78216468041363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2fc4a16a591%3A0xb4a7abb5ed03b8da!2sLiniers%201080%2C%20Temperley%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1678036747675!5m2!1ses!2sar"
+            width="272"
+            height="240"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <h3>Luis Guillon</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2613791277017!2d-58.45591078501504!3d-34.79936538040918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3d2faa79b7b%3A0xc7ca118eee1b1e57!2sDanzarte!5e0!3m2!1ses!2sar!4v1678038194770!5m2!1ses!2sar"
+            width="272"
+            height="240"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </section>
-
-        <section>
-          <label for="apellido"
-            ><span class="label"
-              >Apellido<span class="error">*</span></span
-            ></label
-          >
-
-          <input
-            type="text"
-            name="apellido"
-            id="form-apellido"
-            placeholder="Apellido"
-            autocomplete="family-name"
-            required
-          />
-          <span class="error ocultar"
-            ><i class="fi fi-rr-info"></i> El campo es requerido</span
-          >
-        </section>
-
-        <section>
-          <label for="telefono"><span class="label">Telefono</span></label>
-
-          <input
-            type="tel"
-            name="telefono"
-            id="form-telefono"
-            placeholder="Telefono"
-            autocomplete="tel-national"
-          />
-        </section>
-
-        <section>
-          <label for="email"
-            ><span class="label">Email<span class="error">*</span></span></label
-          >
-
-          <input
-            type="email"
-            name="email"
-            id="form-email"
-            placeholder="user@mail.com"
-            autocomplete="email"
-            required
-          />
-          <span class="error-incompleto ocultar"
-            ><i class="fi fi-rr-info"></i> Email requerido</span
-          >
-          <span class="error-formato ocultar"
-            ><i class="fi fi-rr-info"></i>Formato incorrecto</span
-          >
-        </section>
-
-        <section>
-          <label for="comentario"><span class="label">Mensaje</span></label>
-
-          <textarea
-            name="comentario"
-            id="comentario"
-            cols="30"
-            rows="10"
-            spellcheck="true"
-            placeholder="Ingrese su mensaje ... "
-            maxlength="500"
-          ></textarea>
-          <span class="info-comentario"
-            ><i class="fi fi-rr-info"></i>500 caracteres restantes</span
-          >
-        </section>
-
-        <section class="inscripcion">
-          <label for="inscripcion">
-            <span class="label"
-              >Queres que te contactemos para programar una clase de prueba?
-            </span>
-            <input type="checkbox" name="inscripcion" id="inscripcion" />
-          </label>
-        </section>
-        <button type="submit">Enviar Consulta</button>
-      </form>
-
-      <section class="contact-data">
-        <ul>
-          <li><i class="fi-ss-marker"></i> Direccion</li>
-          <li><i class="fi-ss-phone-call"></i> 9999-9999</li>
-          <li><i class="fi-ss-envelope"></i> contacto@mail.com</li>
-          <li><i class="fi-brands-instagram"></i>@Danzarte Fiori</li>
-          <li><i class="fi-brands-facebook"></i>@Danzarte</li>
-          <li><i class="fi-brands-youtube"></i>@DanzarteVideo</li>
-        </ul>
-      </section>
-
-      <iframe
-        src="https://www.google.com/maps/d/u/0/embed?mid=1803NIPLe3fqJVL3w_A8l41DiWWxkegE&ehbc=2E312F"
-        width="272"
-        height="240"
-      ></iframe>
+      </div>
     </main>
     <footer class="footer-container">
       <!-- Lista de links ( con iconos a redes sociales ) -->
@@ -280,7 +304,7 @@
           href="https://github.com/SalernoLuciano"
           target="_blank"
           rel="noopener noreferrer"
-          ><i class="fi-brands-github"></i> Luciano Salerno</a
+          ><i class="fi-brands-github"></i>Luciano Salerno</a
         >
       </p>
     </footer>
