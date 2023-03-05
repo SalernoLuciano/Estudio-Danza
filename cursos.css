@@ -33,3 +33,22 @@
   margin-bottom: 1rem;
   color: #732650;
 }
+
+@media screen and (min-width: 768px) {
+  .curso {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .curso__docente {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .curso__docente {
+    width: 30%;
+  }
+}
