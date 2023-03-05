@@ -110,7 +110,7 @@ nav {
 }
 
 .nav__menu-container__menu__item__link {
-  color: var(--pink-secondary);
+  color: var(--pink-background);
   font-family: "Oswald", sans-serif;
   font-weight: 200;
   text-decoration: none;
@@ -118,8 +118,9 @@ nav {
 
 .nav__menu-container__menu__item__link:hover,
 .footer-container__links__item:hover {
-  text-shadow: 1px 1px 2px white, 0 0 1em var(--pink-primary),
+  text-shadow: 1px 1px 2px var(--pink-dark), 0 0 1em var(--pink-secondary),
     0 0 0.2em var(--pink-primary);
+  transition: all 0.5s ease;
 }
 
 /* FIN estilos nav__menu-container */
@@ -229,14 +230,17 @@ main > h2::before {
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
+  position: relative;
 }
 
 .facebook {
   color: var(--facebook-color);
+  position: relative;
 }
 
 .youtube {
   color: var(--youtube-color);
+  position: relative;
 }
 
 .instagram:hover {
@@ -253,6 +257,18 @@ main > h2::before {
   text-shadow: 0px 0px 2px var(--pink-primary), 0 0 0.5em var(--facebook-color),
     0 0 0.2em var(--facebook-color);
 }
+
+/* .facebook::before,
+.youtube::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #0d0d0d8c;
+  position: absolute;
+  left: -32%;
+  top: -7%;
+  border-radius: 50%;
+} */
 
 .copyright {
   font-size: 10px;
@@ -320,6 +336,9 @@ main > h2::before {
   }
 }
 
-.error {
+.error,
+.error-formato,
+.error-incompleto,
+.info-comentario {
   color: var(--youtube-color);
 }
