@@ -346,3 +346,23 @@ main > h2::before {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 0.8rem;
 }
+
+.whatsapp-link {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 64px;
+  height: 64px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 0 10px #a5a5a5;
+}
+
+.fi-brands-whatsapp {
+  font-size: 40px;
+  color: white;
+}
