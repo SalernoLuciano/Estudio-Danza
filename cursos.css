@@ -34,10 +34,19 @@
   color: #732650;
 }
 
+iframe {
+  width: 100%;
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   .curso {
     flex-direction: row;
     align-items: center;
+  }
+
+  .cursos:nth-child(odd) > .curso {
+    flex-direction: row-reverse;
   }
 }
 
