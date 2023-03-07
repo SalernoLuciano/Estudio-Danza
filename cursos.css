@@ -54,10 +54,24 @@ iframe {
   .curso__docente {
     width: 50%;
   }
+
+  iframe {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  iframe {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1900px) {
   .curso__docente {
+    width: 30%;
+  }
+
+  iframe {
     width: 30%;
   }
 }

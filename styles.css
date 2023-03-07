@@ -185,6 +185,12 @@ main > h2::before {
   max-width: fit-content;
   margin: auto;
 }
+
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 /* FIN estilos MAIN */
 
 /* Inicio de estilos del FOOTER*/
@@ -259,18 +265,6 @@ main > h2::before {
     0 0 0.2em var(--facebook-color);
 }
 
-/* .facebook::before,
-.youtube::before {
-  content: "";
-  width: 40px;
-  height: 40px;
-  background-color: #0d0d0d8c;
-  position: absolute;
-  left: -32%;
-  top: -7%;
-  border-radius: 50%;
-} */
-
 .copyright {
   font-size: 10px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -305,6 +299,12 @@ main > h2::before {
     flex-direction: row;
   }
 
+  .index-main__historia-descripcion {
+    display: flex;
+    width: 70%;
+    margin: auto;
+  }
+
   .footer-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -334,6 +334,13 @@ main > h2::before {
 
   .footer-container__links {
     grid-column: 4/6;
+  }
+
+  .testimonios {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 2rem;
+    justify-content: center;
   }
 }
 

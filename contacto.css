@@ -93,6 +93,7 @@ button[type="submit"] {
   color: black;
   border-color: transparent;
   box-shadow: 0 0 5px #a5a5a5;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
